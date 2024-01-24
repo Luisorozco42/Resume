@@ -60,3 +60,7 @@ h2, h3 {
 #mainLeft {
     border-right: 1px solid lightgray;
 }
+
+.two-columns {
+    column-count: 2;
+}
