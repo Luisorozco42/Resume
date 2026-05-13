@@ -15,7 +15,7 @@ window.addEventListener('DOMContentLoaded', function() {
                         filename: 'LuisOrozco_Resume.pdf',
                         image: { type: 'jpeg', quality: 0.98 },
                         html2canvas: { scale: 2, useCORS: true },
-                        jsPDF: { unit: 'in', format: 'letter', orientation: 'portrait' },
+                        jsPDF: { unit: 'in', format: 'A3', orientation: 'portrait' },
                         pagebreak: { mode: ['avoid-all', 'css', 'legacy'] }
                     })
                     .from(element)
