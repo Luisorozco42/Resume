@@ -1,34 +1,37 @@
-<html lang="en">
+<html lang="es">
 
 
 <head>
     <meta charset="UTF-8">
     <link href="style.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-    <title>Luis Orozco's Resume</title>
+    <title>Currículum de Luis Orozco</title>
 </head>
 
 <body>
-</head>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
-<script src="pdf-export.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+    <script src="pdf-export.js"></script>
     <div style="text-align:right; margin: 10px;">
-        <button id="download-pdf-btn" style="padding: 8px 16px; font-size: 1em; cursor: pointer;">Download as PDF</button>
+        <button id="download-pdf-btn" style="padding: 8px 16px; font-size: 1em; cursor: pointer;">Descargar como
+            PDF</button>
     </div>
     <header id="header">
-        <!-- resume header with your name and title -->
         <h1>
             <strong>Luis Guillermo</strong> Orozco Lazo
         </h1>
         <hr>
-    Software Engineering Student
+        <p style="margin: 0; font-size: 1.1rem; font-weight: 500;">Estudiante de Ingeniería de Software con experiencia
+            en desarrollo web, automatización de procesos y soporte técnico.</p>
         <hr>
+        <p style="margin: 8px 0; max-width: 760px;">Profesional orientado a resultados, con habilidades en soluciones
+            tecnológicas, gestión de proyectos y mejora continua. Busco oportunidades en equipos de software, TI y
+            transformación digital.</p>
     </header>
     <main>
         <article id="mainLeft">
             <section>
-                <h2>Contact</h2>
-                <!-- contact information including social networks -->
+                <h2>Contacto</h2>
+                <!-- información de contacto incluyendo redes sociales -->
                 <p>
                     <i class="fa fa-envelope" aria-hidden="true"></i>
                     <a href="mailto:lorozcolazo@gmail.com">lorozcolazo@gmail.com</a>
@@ -40,127 +43,160 @@
                 </p>
             </section>
             <section>
-                <h2>Technical Skills</h2>
-                <!-- programming and tech skills -->
-                <h3>Languages & Frameworks</h3>
-                <ul>
-                    <li>Java</li>
-                    <li>Kotlin</li>
-                    <li>Dart / Flutter</li>
-                    <li>Web Development (WordPress)</li>
-                </ul>
-                <h3>Databases & Backend</h3>
-                <ul>
-                    <li>PostgreSQL</li>
-                    <li>MySQL</li>
-                    <li>SQL</li>
-                </ul>
-                <h3>Tools & Platforms</h3>
-                <ul>
-                    <li>Git / GitHub</li>
-                    <li>Microsoft Azure</li>
-                    <li>DevOps</li>
-                    <li>Process Automation</li>
-                </ul>
-                <p><a href="https://learn.microsoft.com/en-us/users/luisorozco-7814/achievements">View Microsoft Learn Achievements</a></p>
+                <h2>Habilidades técnicas</h2>
+                <div class="two-columns-grid">
+                    <div>
+                        <h3>Lenguajes</h3>
+                        <ul>
+                            <li>Java</li>
+                            <li>Kotlin</li>
+                            <li>Dart / Flutter</li>
+                            <li>Python</li>
+                            <li>JavaScript</li>
+                            <li>HTML / CSS</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3>Frameworks y herramientas</h3>
+                        <ul>
+                            <li>Spring Boot</li>
+                            <li>Jakarta EE</li>
+                            <li>Hibernate / JPA</li>
+                            <li>Angular</li>
+                            <li>Bootstrap</li>
+                            <li>WordPress</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3>Bases de datos y backend</h3>
+                        <ul>
+                            <li>PostgreSQL</li>
+                            <li>MySQL</li>
+                            <li>SQL</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3>Herramientas y metodologías</h3>
+                        <ul>
+                            <li>Git / GitHub</li>
+                            <li>IntellIJ IDEA</li>
+                            <li>PyCharm</li>
+                            <li>Visual Studio Code</li>
+                            <li>Postman</li>
+                            <li>Microsoft Azure</li>
+                            <li>DevOps</li>
+                            <li>Automatización de procesos</li>
+                            <li>Metodologías ágiles</li>
+                        </ul>
+                    </div>
+                </div>
+                <p><a href="https://learn.microsoft.com/en-us/users/luisorozco-7814/achievements">Ver logros en
+                        Microsoft Learn</a></p>
             </section>
 
             <section>
-                <h2>Education</h2>
-                <h3>Central American University José Simeón Cañas (El Salvador)</h3>
-                <p>Software Engineering | 2024 – Present</p>
+                <h2>Educación</h2>
+                <h3>Universidad Centroamericana José Simeón Cañas (El Salvador)</h3>
+                <p>Ingeniería de Software | 2024 – Presente</p>
 
-                <h3>Central American University (Nicaragua)</h3>
+                <h3>Universidad Centroamericana (Nicaragua)</h3>
                 <p>2020 – 2023</p>
 
-                <h3>Nicaraguan German School</h3>
+                <h3>Colegio Alemán Nicaragüense</h3>
                 <p>2008 – 2019</p>
             </section>
 
             <section>
-                <h2>Soft Skills</h2>
+                <h2>Habilidades blandas</h2>
                 <div class="two-columns">
                     <ul>
-                        <li>Teamwork</li>
-                        <li>Customer Service</li>
-                        <li>Computer Skills</li>
+                        <li>Trabajo en equipo</li>
+                        <li>Atención al cliente</li>
+                        <li>Competencias informáticas</li>
                         <br>
-                        <li>Multitasking</li>
-                        <li>Adaptability</li>
-                        <li>Results-oriented</li>
+                        <li>Multitarea</li>
+                        <li>Adaptabilidad</li>
+                        <li>Orientación a resultados</li>
                     </ul>
                 </div>
             </section>
 
             <section>
-                <h2>Languages</h2>
-                <!-- about you -->
+                <h2>Idiomas</h2>
+                <!-- sobre ti -->
                 <ul>
-                    <li>Spanish: Native</li>
-                    <li>English: Advanced (B2)</li>
-                    <li>German: Intermediate (B1)</li>
+                    <li>Español: Nativo</li>
+                    <li>Inglés: Avanzado (B2)</li>
+                    <li>Alemán: Intermedio (B1)</li>
                 </ul>
             </section>
         </article>
         <article id="mainRight">
             <section>
-                <h2>Key Projects</h2>
-                <h3>Accounting Automation</h3>
-                <p>Developed an automated financial processing system to improve efficiency and accuracy.</p>
-                
-                <h3>Maintenance & Diagnostics System</h3>
-                <p>Led development of a computer diagnostic and maintenance report generation system for labs, demonstrating strong project management.</p>
-                
-                <h3>Web Development</h3>
-                <p>Freelance WordPress development with focus on optimization and client communication.</p>
+                <h2>Proyectos clave</h2>
+                <h3>Automatización contable</h3>
+                <p>Desarrollé un sistema automatizado de procesamiento financiero para mejorar la eficiencia y la
+                    precisión.</p>
 
-                <h2>Professional Experience</h2>
-                <!-- your work experience -->
-                <h3>IT Assistant & Process Automation Specialist</h3>
-                <p><b>UCA Continuing Education Center</b> | 2024 – Present</p>
+                <h3>Sistema de mantenimiento y diagnóstico</h3>
+                <p>Lideré el desarrollo de un sistema de diagnóstico informático y generación de informes de
+                    mantenimiento para laboratorios, demostrando una sólida gestión de proyectos.</p>
+
+                <h3>Desarrollo web</h3>
+                <p>Desarrollo freelance en WordPress con enfoque en optimización y comunicación con el cliente.</p>
+
+                <h2>Experiencia profesional</h2>
+                <!-- experiencia laboral -->
+                <h3>Asistente de TI y especialista en automatización de procesos</h3>
+                <p><b>Centro de Educación Continua UCA</b> | 2024 – Presente</p>
                 <ul>
-                    <li>Optimized administrative and logistics tasks through process automation.</li>
-                    <li>Provided technical support and troubleshooting for infrastructure and client systems.</li>
-                    <li>Coordinated logistics and operations for large-scale events.</li>
+                    <li>Optimizé tareas administrativas y logísticas mediante automatización de procesos.</li>
+                    <li>Brindé soporte técnico y solución de problemas para infraestructura y sistemas de clientes.</li>
+                    <li>Coordiné la logística y operaciones de eventos a gran escala.</li>
                 </ul>
 
-                <h3>Computer and Printer Repair Technician (2023 – Present)</h3>
+                <h3>Técnico en reparación de computadoras e impresoras (2023 – Presente)</h3>
                 <ul>
-                    <li>Hardware and software diagnostics and repair for desktop and laptop computers.</li>
-                    <li>OS installation, driver configuration, and software deployment.</li>
-                    <li>Printer maintenance, connectivity troubleshooting, and system optimization.</li>
-                    <li>Provided technical consultation improving device productivity and lifespan.</li>
+                    <li>Diagnóstico y reparación de hardware y software para computadoras de escritorio y portátiles.
+                    </li>
+                    <li>Instalación de sistemas operativos, configuración de controladores y despliegue de software.
+                    </li>
+                    <li>Mantenimiento de impresoras, resolución de problemas de conectividad y optimización del sistema.
+                    </li>
+                    <li>Brindé asesoría técnica para mejorar la productividad y la vida útil de los dispositivos.</li>
                 </ul>
 
-                <h3>Student Ambassador & Innovation Developer</h3>
+                <h3>Embajador estudiantil y desarrollador de innovación</h3>
                 <p><b>Microsoft Imagine Cup</b> | 2024 – 2025</p>
                 <p>
-                    Participated in Microsoft Imagine Cup fostering innovation and showcasing technical projects. Explored emerging technologies and developed technical expertise and collaboration skills.
+                    Participé en Microsoft Imagine Cup fomentando la innovación y presentando proyectos técnicos.
+                    Exploré tecnologías emergentes y desarrollé habilidades técnicas y de colaboración.
                 </p>
 
             </section>
 
             <section>
 
-                <h3>Freelance Web Developer (2023 – 2024)</h3>
+                <h3>Desarrollador web freelance (2023 – 2024)</h3>
                 <ul>
-                    <li>Full-stack WordPress development including custom themes and plugins.</li>
-                    <li>Website optimization, performance tuning, and SEO implementation.</li>
-                    <li>Client communication, requirements gathering, and project delivery.</li>
+                    <li>Diseño e implementación de sitios WordPress con temas y plugins personalizados.</li>
+                    <li>Optimización de rendimiento web y mejoras en la experiencia de usuario.</li>
+                    <li>Comunicación con clientes, definición de requerimientos y entrega de soluciones.</li>
                 </ul>
 
-                <h3>Family Business Operations (2016 – 2024)</h3>
+                <h3>Operaciones del negocio familiar (2016 – 2024)</h3>
                 <ul>
-                    <li>Financial record keeping and data entry systems management.</li>
-                    <li>Inventory and logistics coordination ensuring efficient operations.</li>
-                    <li>Customer support and inquiry resolution.</li>
+                    <li>Gestión de registros financieros y administración de datos empresariales.</li>
+                    <li>Coordinación de inventarios y logística para operaciones más eficientes.</li>
+                    <li>Atención al cliente y resolución de requerimientos comerciales.</li>
                 </ul>
             </section>
 
             <section>
-                <h2>Certificates</h2>
-                    <p><b>Mastering GitHub:</b> Collaboration at DevOps Challenge (September 13, 2023)</p>
-                    <p><b>Cloud Skills Challenge:</b> Azure Data Fundamentals: Discovering the Essential Challenge (December 26, 2023)</p>
+                <h2>Certificados</h2>
+                <p><b>Mastering GitHub:</b> Collaboration at DevOps Challenge (13 de septiembre de 2023)</p>
+                <p><b>Cloud Skills Challenge:</b> Azure Data Fundamentals: Discovering the Essential Challenge (26 de
+                    diciembre de 2023)</p>
             </section>
         </article>
     </main>
