@@ -1,101 +1,289 @@
-/* Hide the PDF button when printing or exporting to PDF */
-@media print {
-    #download-pdf-btn {
-        display: none !important;
-    }
-    body {
-        background: white !important;
-        color: black !important;
-        box-shadow: none !important;
-    }
-    main {
-        display: block !important;
-    }
-    .two-columns {
-        column-count: 2 !important;
-    }
-    section, header {
-        page-break-inside: avoid;
-    }
+:root {
+    --ink: #20252b;
+    --muted: #5c6670;
+    --accent: #1f4e79;
+    --header: #263238;
+    --rule: #d6dce1;
 }
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    background-color: #f1f3f5;
+}
+
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 16px;
-    max-width: 960px;
-    margin: auto;
+    background-color: #f1f3f5;
+    color: var(--ink);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    line-height: 1.45;
+    margin: 0;
 }
 
-h1 {
-    font-size: 3em;
-    letter-spacing: .6em;
-    padding-top: 1em;
-    padding-bottom: 1em;
-    font-weight: 100;
-    margin-bottom: 0;
+.resume-container {
+    margin: 0 auto;
+    max-width: 850px;
+    min-height: 100vh;
+    padding: 28px 46px 48px;
 }
 
-h2 {
-    font-size: 1.5em;
-    padding-bottom: 1em;
+.pdf-export .resume-container {
+    max-width: none;
+    width: 100%;
 }
 
-h3 {
-    font-size: 1em;
-    padding-bottom: 1em;
-}
-main { 
-    display: grid;
-    grid-template-columns: 40% 60%;
-    margin-top: 3em;
-}
-header {
-    text-align: center;
-    margin: auto 2em;
+#download-pdf-btn {
+    background: #fff;
+    border: 1px solid #fff;
+    color: var(--header);
+    cursor: pointer;
+    font-size: .8rem;
+    font-weight: 700;
+    padding: 6px 12px;
+    position: relative;
+    z-index: 1;
 }
 
-section {
-    margin: auto 1em 4em 2em;
+#header {
+    background: var(--header);
+    border-bottom: 6px solid var(--accent);
+    color: #fff;
+    margin: -28px -46px 32px;
+    overflow: hidden;
+    padding: 38px 46px 30px;
+    position: relative;
 }
 
-i {
-    margin-right: .5em;
+#header::after {
+    background: var(--accent);
+    content: "";
+    height: 150px;
+    opacity: .22;
+    position: absolute;
+    right: -45px;
+    top: -85px;
+    transform: rotate(35deg);
+    width: 190px;
 }
 
+.header-title-row {
+    align-items: flex-start;
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+    position: relative;
+    z-index: 1;
+}
+
+.header-title-row h1 {
+    flex: 1;
+}
+
+h1,
+h2,
+h3,
 p {
-    margin: .2em auto
-}
-
-hr {
-    border: none;
-    background-color: lightgray;
-    height: 1px;
-}
-
-h2, h3 {
-    font-weight: 100;
-    margin-bottom: 0;
-    font-weight: bold;
-}
-
-#mainLeft {
-    border-right: 1px solid lightgray;
-}
-
-.two-columns {
-    column-count: 2;
-}
-
-.two-columns-grid {
-    display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 1.5em;
-}
-
-.two-columns-grid h3 {
     margin-top: 0;
 }
 
-.two-columns-grid ul {
-    margin: 0;
-    padding-left: 1.2em;
+h1 {
+    font-size: 2.65rem;
+    font-weight: 700;
+    letter-spacing: .01em;
+    line-height: 1.05;
+    margin-bottom: 12px;
+}
+
+.headline {
+    color: #dce7ee;
+    font-size: 1.08rem;
+    font-weight: 600;
+    letter-spacing: .015em;
+    margin-bottom: 14px;
+}
+
+.contact-line {
+    color: #fff;
+    margin-bottom: 0;
+}
+
+a {
+    color: var(--accent);
+}
+
+#header a {
+    color: #fff;
+}
+
+.contact-line span {
+    margin: 0 8px;
+}
+
+.contact-line .contact-separator {
+    color: #91a6b4;
+}
+
+.contact-line i {
+    margin-right: 3px;
+}
+
+main {
+    display: block;
+}
+
+section {
+    margin-bottom: 26px;
+}
+
+h2 {
+    border-bottom: 1px solid var(--rule);
+    color: var(--ink);
+    font-size: 1.1rem;
+    font-weight: 700;
+    letter-spacing: .08em;
+    margin-bottom: 14px;
+    padding: 0 0 7px 12px;
+    position: relative;
+    text-transform: uppercase;
+}
+
+h2::before {
+    background: var(--accent);
+    content: "";
+    height: 18px;
+    left: 0;
+    position: absolute;
+    top: 1px;
+    width: 4px;
+}
+
+h3 {
+    color: var(--ink);
+    font-size: 1.05rem;
+    font-weight: 700;
+    line-height: 1.25;
+    margin-bottom: 4px;
+}
+
+p {
+    margin-bottom: 8px;
+}
+
+ul {
+    margin: 7px 0 0;
+    padding-left: 19px;
+}
+
+li {
+    margin-bottom: 3px;
+}
+
+.experience-item,
+.education-item,
+.project-item {
+    margin-bottom: 18px;
+}
+
+.experience-item:last-child,
+.education-item:last-child,
+.project-item:last-child {
+    margin-bottom: 0;
+}
+
+.meta {
+    color: var(--muted);
+    font-size: .85rem;
+    font-weight: 700;
+    letter-spacing: .04em;
+    margin-bottom: 6px;
+    text-transform: uppercase;
+}
+
+.skills-list p {
+    margin-bottom: 6px;
+}
+
+@media (max-width: 640px) {
+    .resume-container {
+        padding: 20px 22px 36px;
+    }
+
+    #header {
+        margin: -20px -22px 32px;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    .header-title-row {
+        align-items: stretch;
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .headline {
+        font-size: 1rem;
+    }
+
+    .contact-line .contact-separator {
+        display: none;
+    }
+
+    .contact-line a {
+        display: block;
+        margin-bottom: 3px;
+    }
+}
+
+@media print {
+    @page {
+        margin: 0;
+    }
+
+    body {
+        background-color: #fff;
+        color: #000;
+        font-size: 10.5pt;
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+    }
+
+    .resume-container {
+        max-width: none;
+        padding: 0;
+    }
+
+    .download-control,
+    .header-title-row .download-control {
+        display: none;
+    }
+
+    #header {
+        margin-top: 0;
+        margin-left: 0;
+        margin-right: 0;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    #header::after {
+        display: none;
+    }
+
+    a {
+        color: #000;
+        text-decoration: none;
+    }
+
+    .experience-item,
+    .education-item,
+    .project-item,
+    .certification-item {
+        break-inside: avoid;
+        page-break-inside: avoid;
+    }
 }

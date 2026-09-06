@@ -1,32 +1,48 @@
 
-# Luis Orozco's Resume
+# Luis Orozco - Resume
 
-This project contains the interactive and downloadable web-based resume of Luis Guillermo Orozco Lazo, a Software Engineering student.
+A responsive, web-based resume for Luis Guillermo Orozco Lazo, a Software Engineering student. The resume includes professional experience, education, technical skills, projects, certifications, and contact information.
 
 ## Features
 
-- **Modern, responsive design** using HTML and CSS
-- **Contact information** and links to social profiles
-- **Skills, education, and work experience** sections
-- **Download as PDF** button (powered by [html2pdf.js](https://github.com/eKoopmans/html2pdf.js))
-- Easy to update and customize
+- Responsive resume layout for desktop and mobile screens
+- Structured sections for experience, education, skills, projects, certifications, and languages
+- Contact links for email, telephone, GitHub, and Microsoft Learn
+- One-click PDF download
+- Standardized PDF output in A4 portrait format
+- Page-break handling to keep resume entries together
+- Easy customization with plain HTML and CSS
 
 ## Usage
 
 1. Clone or download this repository.
-2. Open `index.html` in your web browser to view the resume.
-3. Click the **Download as PDF** button to save a PDF version.
+2. Open `index.html` in a modern web browser.
+3. Click **Descargar PDF** to automatically download `LuisOrozco_Resume.pdf`.
+
+The page loads its external libraries from CDNs, so an internet connection is required for the Bootstrap styles, Bootstrap Icons, and PDF export functionality when opening the page directly.
+
+## Project Structure
+
+| File | Purpose |
+| --- | --- |
+| `index.html` | Resume content and external library references |
+| `style.css` | Responsive layout, colors, typography, and print/export styles |
+| `pdf-export.js` | One-click A4 PDF generation and download behavior |
+| `codeswing.json` | CodeSwing workspace configuration |
 
 ## Customization
 
-- Edit `index.html` to update content.
-- Modify `style.css` for appearance changes.
-- The PDF export logic is in `pdf-export.js`.
+- Edit the text and links in `index.html`.
+- Update colors, spacing, typography, and responsive behavior in `style.css`.
+- Change the PDF filename, margins, scale, or page-break selectors in `pdf-export.js`.
 
-## Dependencies
+No build step or package installation is required. A local web server can be used for development, but opening `index.html` directly is also supported.
 
-- [Font Awesome](https://fontawesome.com/) for icons
-- [html2pdf.js](https://github.com/eKoopmans/html2pdf.js) for PDF export
+## External Libraries
+
+- [Bootstrap 5](https://getbootstrap.com/) for layout utilities
+- [Bootstrap Icons](https://icons.getbootstrap.com/) for interface icons
+- [html2pdf.js](https://github.com/eKoopmans/html2pdf.js) for direct A4 PDF generation
 
 ## License
 
